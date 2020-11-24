@@ -1,0 +1,88 @@
+$white : #ffffff;
+$strong-verde:#21E202;
+$strong-azul: #00E0FF;
+$strong-rojo: #FF0101;
+$strong-amarillo: #E7EC00;
+body{
+    background-color: rgb(56, 0, 63);
+    color: white;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+.modal-content{
+    border: none;
+}
+.modal.fade.show{
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+section{
+    min-height: 85vh;
+}
+div,p,section,a,ul,span{
+    padding: 0;
+    margin: 0;
+}
+pre{
+    color: $white;
+}
+
+.strong-verde{
+    color: $strong-verde;
+}
+.strong-azul{
+    color: $strong-azul;
+}
+.strong-rojo{
+    color: $strong-rojo;
+}
+.strong-amarillo{
+    color: $strong-amarillo;
+}
+.cabecera-de-seccion{
+    padding: 24px 16px;
+    &__titulo{
+        color: $white;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    &__subtitulo{
+        color: $white;
+        font-size: 1rem;
+        text-align: center;
+    }
+}
+
+@media (min-width: 992px) {
+    .cabecera-de-seccion{
+        padding: 38px 16px;
+        &__titulo{
+            color: $white;
+            font-size: 2.5rem;
+            text-align: center;
+        }
+        &__subtitulo{
+            color: $white;
+            font-size: 1.2rem;
+            text-align: center;
+        }
+    }
+}
+
+
+body::-webkit-scrollbar {
+width: 11px;
+}
+body {
+scrollbar-width: thin;
+}
+body::-webkit-scrollbar-track {
+    background: rgb(228, 215, 223);
+}
+body::-webkit-scrollbar-thumb {
+    background-color: #1b001f ;
+    border-radius: 6px;
+}
